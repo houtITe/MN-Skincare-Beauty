@@ -681,15 +681,6 @@ p {
   align-self: center;
 }
 
-.container-wrapper1 {
-  width: 100%;
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
-  padding: 6px 0 10px;
-  margin: 0 60px 60px 0;
-}
-
 .ticker-track {
   display: inline-flex;
   width: max-content;
@@ -706,46 +697,6 @@ p {
   100% {
     transform: translateX(-50%); 
   }
-}
-
-.chip-set {
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  gap: 10px;
-  padding-right: 10px;
-}
-
-.filter-chip {
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 7px 18px;
-  border-radius: 999px;
-  border: 1px solid #e8d5c4;
-  background: #fdf8f4;
-  color: #8a6650;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
-  user-select: none;
-  margin-top: 16px;
-  flex-shrink: 0;
-}
-
-.filter-chip:hover {
-  background: #f5e8dc;
-  border-color: #c9a98a;
-  color: #6b4a35;
-  transform: translateY(-1px);
-}
-
-.filter-chip.active {
-  background: #8a6650;
-  border-color: #8a6650;
-  color: #fdf8f4;
 }
 
 #services {
@@ -1070,7 +1021,9 @@ p {
 }
 
 .process-grid { 
-  display: block; 
+  align-items: center;
+  display: block;
+  gap: 40px; 
 }
 
 .reel-pair {
@@ -1757,14 +1710,15 @@ p {
 }
 
 .site-footer {
-  background: var(--color-text);
+  background: rgba(0, 0, 0, 0.813);
   color: rgba(255,255,255,0.75);
-  padding: 70px 0 30px;
+  padding: 90px 0 30px;
+  
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
   gap: 40px;
   margin-bottom: 50px;
 }
@@ -1949,7 +1903,7 @@ p {
   .section-title .eyebrow{
     margin-top: 30px;
   }
-
+  
   .referent{
     margin-bottom: 40px;
   }
@@ -1968,10 +1922,12 @@ p {
     border-radius: 60px; 
   }
   
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+ 
+  .process-grid { 
+    justify-content: center;
+    display: flex;
+    gap: 40px; 
+    margin: -20px 2px;
   }
   .about-section { 
     padding: 60px 24px; 
@@ -2105,9 +2061,17 @@ p {
 
   .footer-grid { 
     grid-template-columns: 1fr; 
-    text-align: left; 
+    text-align: center; 
   }
-
+  .footer-brand p{
+    margin-left: 140px;
+    margin-right: 110px;
+   
+  }
+  .footer-brand .footer-socials {
+    justify-content: center;
+    margin-left: 40px;
+  }
   .services-container { 
     padding: 20px 15px; 
   }
