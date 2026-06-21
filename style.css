@@ -306,7 +306,8 @@ p {
 }
 
 .img-placeholder {
-  background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-pink) 100%);
+  
+  background: black;
   display: grid;
   place-items: center;
   color: rgba(255, 255, 255, 0.85);
@@ -316,7 +317,9 @@ p {
   border-radius: var(--radius-md);
 }
 .img-placeholder-home {
-  background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-pink) 100%);
+  width: 100%;
+  overflow: hidden;
+  background: black;
   display: grid;
   place-items: center;
   color: rgba(255, 255, 255, 0.85);
@@ -327,13 +330,13 @@ p {
 }
 
 .img-placeholder.alt-1 { 
-  background: linear-gradient(135deg, var(--color-pink-soft), var(--color-pink-deep)); 
+  background: black; 
 }
 .img-placeholder.alt-2 { 
-  background: linear-gradient(135deg, var(--color-beige-deep), var(--color-gold)); 
+  background: black; 
 }
 .img-placeholder.alt-3 { 
-  background: linear-gradient(135deg, var(--color-cream), var(--color-beige)); 
+ background: black; 
   color: var(--color-gold-deep); 
 }
 
@@ -367,7 +370,7 @@ p {
   place-items: center;
   font-family: var(--font-display);
   font-size: 9rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.391);
   letter-spacing: 8px;
 }
 
@@ -376,6 +379,7 @@ p {
 }
 
 .product-grid {
+  background: #000;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
@@ -392,7 +396,6 @@ p {
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
   box-shadow: var(--shadow-card);
 }
 
@@ -409,7 +412,7 @@ p {
 }
 
 .btn-cart {
-  display:f;
+  margin-top: 20px;
   border: #000;
   border-radius: 10px;
   cursor: pointer;
@@ -448,13 +451,19 @@ p {
 }
 
 .price {
+  margin-top: -20px;
+  margin-bottom: -20px;
   font-family: var(--font-display);
   font-size: 1.3rem;
   color: var(--color-gold-deep);
   font-weight: 600;
 }
 
-.stars { color: var(--color-gold); font-size: 0.85rem; margin-bottom: 6px; }
+.stars { 
+  color: var(--color-gold); 
+  font-size: 0.85rem; 
+  margin: -9px 0 0 0; 
+}
 
 .product-card .badge {
   position: absolute;
@@ -490,7 +499,7 @@ p {
   border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  background: var(--color-white);
+  background: rgb(0, 0, 0);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -632,6 +641,7 @@ p {
 }
 
 .dist-hero {
+  
   height: 1000px;
   width: 100%;
   padding: 120px 0 80px;
@@ -1755,7 +1765,7 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1.4fr 1.4fr;
+  grid-template-columns: 1.4fr 1.4fr 1.5fr;
   gap: 40px;
   margin-bottom: 50px;
 }
@@ -1968,7 +1978,7 @@ p {
     margin: -20px 2px;
   }
   .about-section { 
-    padding: 60px 24px; 
+    padding: 30px 24px; 
     min-height: unset; 
   }
   .about-grid    { 
@@ -2041,6 +2051,7 @@ p {
     max-width: 420px; 
   }
 
+
   .location-wrapper { 
     flex-direction: column; 
   }
@@ -2048,6 +2059,10 @@ p {
     aspect-ratio: 4 / 3; 
   }
 
+  .talk-section    {
+    padding: 56px 20px 48px; 
+    margin-top: 40px;
+  }
   .process-section { 
     padding: 64px 20px 80px; 
   }
@@ -2206,6 +2221,7 @@ p {
   }
   .talk-section    {
     padding: 56px 20px 48px; 
+    margin-top: 40px;
   }
   .about-img-wrap{
     margin-left: 40px;
