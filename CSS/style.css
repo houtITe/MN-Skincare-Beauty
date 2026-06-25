@@ -1,8 +1,6 @@
 :root {
-  --color-white:      #ffffff;
   --color-cream:      #0a0703;
   --color-beige:      #f3e9dc;
-  --color-beige-deep: #e8d9c4;
   --color-pink:       #f7d9d4;
   --color-pink-soft:  #fdeeea;
   --color-pink-deep:  #e8b4ac;
@@ -11,29 +9,18 @@
   --color-text:       #2b2421;
   --color-muted:      #7a6f68;
   --color-line:       #ece3d6;
-  --cream:       #f7f3ee;
   --warm-white:  #fdfaf6;
   --charcoal:    #2c2c2c;
-  --muted:       #9a9186;
-  --pill-bg:     #ede8e0;
   --pill-border: #d8d0c4;
-  --white:       #ffffff;
-  --beige:       #f0ebe4;
-  --blush:       #f5e6e8;
+  --beige:       #f0ebe4; 
   --gold:        #c9a96e;
-  --gold-light:  #e8d5b0;
-  --text-dark:   #2c2421;
   --text-mid:    #6b5c56;
-  --text-light:  #9e8a84;
   --border:      #e8ddd8;
-
   --font-display: "Playfair Display", Georgia, serif;
   --font-body:    "Poppins", "Helvetica Neue", Arial, sans-serif;
-
   --shadow-soft: 0 8px 30px rgba(170, 140, 100, 0.12);
   --shadow-card: 0 12px 40px rgba(170, 140, 100, 0.18);
   --shadow-gold: 0 10px 30px rgba(201, 169, 106, 0.30);
-
   --radius-sm: 10px;
   --radius-md: 18px;
   --radius-lg: 28px;
@@ -113,8 +100,7 @@ hr{
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   padding: 15px 48px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  display: flex;
-  align-items: center;
+  display: flex; 
   justify-content: space-between;
   z-index: 1000;
 }
@@ -183,7 +169,7 @@ hr{
 }
 
 .nav-list a span {
-  background-image: linear-gradient(90deg, var(--charcoal) 0%, var(--muted) 100%, var(--charcoal) 50%);
+  background-image: linear-gradient(90deg, var(--charcoal) 0%, #9a9186 100%, var(--charcoal) 50%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -361,7 +347,7 @@ hr{
   position: relative;
   aspect-ratio: 1 / 1.05;
   border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, var(--color-pink) 0%, var(--color-beige-deep) 100%);
+  background: black;
   box-shadow: var(--shadow-card);
   overflow: hidden;
 }
@@ -613,7 +599,7 @@ hr{
 }
 
 .ba-card {
-  background: var(--color-white);
+  background: white;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
@@ -1089,7 +1075,7 @@ hr{
 
 .reel-card {
   margin: 50px 0;
-  background: var(--white);
+  background: white;
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
@@ -1169,14 +1155,14 @@ hr{
   display: block;
   flex: 1;
   height: 1px;
-  background: var(--gold-light);
+  background:#e8d5b0;
 }
 
 .reel-title {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #2c2421;
   margin-bottom: 12px;
   line-height: 1.35;
 }
@@ -1192,7 +1178,7 @@ hr{
   text-align: center;
   margin-top: 64px;
   padding: 32px 24px;
-  background: var(--blush);
+  background: #f5e6e8;
   border-radius: 16px;
   border: 1px solid var(--border);
 }
